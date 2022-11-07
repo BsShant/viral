@@ -1,13 +1,127 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+@font-face {
+  font-family: "nexa light";
+  src: url("./Assets/Fonts/Nexa\ Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nexa bold";
+  src: url("./Assets/Fonts/Nexa\ Bold.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
+:root {
+  --brand-color-1: #a00009;
+  --brand-color-2: #db0000;
+  --brand-color-3: #febe00;
+  --brand-color-4: #f7ee00;
+  --header-height: 70px;
+  --kanit: "Kanit", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --nexa-bold: "nexa bold";
+  --nexa-light: "nexa light";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body {
+  font-family: var(--nexa-light);
+}
+
+.main-button {
+  padding: 10px 25px 10px 25px;
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--brand-color-1);
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 130px;
+  font-family: var(--nexa-light);
+}
+
+.btn-border-gradient.active {
+  background: linear-gradient(to right, #eb242d 0%, #a1398b 100%);
+  color: white;
+  transition: all 1s ease-out;
+}
+.btn-border-gradient:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.btn-border-gradient {
+  border-radius: 20px;
+  padding: 3px 3px 3px 3px;
+  color: black;
+  font-size: 21px;
+  background-color: transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #eb242d, #a1398b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-color: transparent;
+  border-width: 0px;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--nexa-light);
+}
+.btn-border-gradient span {
+  padding: 0px 7px 0px 7px;
+}
+.btn-border-gradient:hover {
+  transition: all 0.3s ease-out;
+  background: linear-gradient(to right, #eb242d 0%, #a1398b 100%);
+  color: white;
+  text-decoration: none;
+}
+
+@-webkit-keyframes gradientslide {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 15% 100%;
+  }
+}
+@-moz-keyframes gradientslide {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 15% 100%;
+  }
+}
+@keyframes gradientslide {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 15% 100%;
+  }
+}
+
+.animate-icon:hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: scale(1.3, 1.3);
 }

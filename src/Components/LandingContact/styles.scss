@@ -1,0 +1,97 @@
+.contact-us {
+  min-height: 600px;
+  margin-bottom: 20px;
+  padding: 30px 22% 30px 22%;
+  
+  @media (max-width: 992px) {
+    padding: 70px 0 !important;
+  }
+  .title {
+    font-family: var(--nexa-light);
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 18px;
+    font-family: var(--nexa-light);
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .contact-form {
+    border: 0px solid black;
+    min-height: 480px;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    .contact-field {
+      height: 100%;
+      padding: 1% 2% 1% 2%;
+    }
+    .contact-field {
+      height: 100%;
+      padding: 1% 4% 1% 4%;
+
+      input,
+      textarea {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        background: transparent;
+        margin-bottom: 10px;
+        font: 16px Arial, Helvetica, sans-serif;
+        height: 45px;
+      }
+      textarea {
+        height: 120px;
+      }
+      button {
+        width: auto;
+        border-radius: 190%;
+        position: relative;
+        top: -50px;
+        left: 20px;
+        float: right;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        &:hover {
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+            0 15px 12px rgba(0, 0, 0, 0.22);
+          transform: scale(1.1, 1.1);
+        }
+      }
+    }
+    .contact-info {
+      color: white;
+      background: linear-gradient(to right, #eb242d 30%, #a1398b 100%);
+      min-height: 480px;
+      padding: 0;
+      margin: 0;
+      .title {
+        padding: 25px 0px 15px 0px;
+        color: #fff;
+
+      }
+      .contact-details {
+        .contact-item {
+          font-size: 16px;
+          font-family: var(--nexa-light);
+        }
+        .contact-item img {
+          width: 30%;
+        }
+      }
+      .contact-info-footer {
+        padding-top: 15px;
+      }
+      .contact-info .contact-info-footer i {
+        padding: 5px;
+      }
+    }
+  }
+}

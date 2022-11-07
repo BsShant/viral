@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "aos/dist/aos.css";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "antd/dist/antd.css";
+
+import AOS from "aos";
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <LandingPage />
     </div>
   );
 }

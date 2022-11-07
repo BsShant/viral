@@ -1,0 +1,56 @@
+.top-influencer {
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(
+      to right,
+      rgba(235, 36, 45, 0.8) 0%,
+      rgba(161, 57, 139, 0.8) 100%
+    ),
+    url("../../Assets/Images/Influencer/influencer-background.png");
+  padding-top: 50px;
+  min-height: 600px;
+  .title {
+    padding: 0px 10% 0px 10%;
+    font-family: var(--nexa-light);
+    color: white;
+    @media (max-width: 992px) {
+      padding: 0 !important;
+      font-size: 28px;
+    }
+  }
+  .description {
+    padding: 0px 20% 0px 20%;
+    font-family: var(--nexa-light);
+    @media (max-width: 992px) {
+      padding: 0 !important;
+      font-size: 14px;
+
+    }
+  }
+  .influencer-items {
+    padding-top: 20px;
+    z-index: 1;
+    display: inline-flex;
+    width: 85%;
+    .item {
+      margin: 20px 25px 20px 25px;
+      .items-text {
+        font-family: var(--nexa-light);
+        font-size: 14px;
+        line-height: 1.42857143;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        display: inline-block;
+      }
+      img {
+        border: 4px solid hsl(0, 0%, 88%);
+        border-radius: 50%;
+      }
+      .items-icon {
+        i {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

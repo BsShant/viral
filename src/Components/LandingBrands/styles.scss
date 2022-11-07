@@ -1,0 +1,59 @@
+.brand {
+  border-bottom: 1px solid #c12030;
+  padding-top: 4px;
+  overflow: hidden;
+
+  .brand-quotes {
+    background: linear-gradient(
+        to right,
+        rgba(235, 36, 45, 0.75) 0%,
+        rgba(161, 57, 139, 0.75) 100%
+      ),
+      url("../../Assets/Images/SliderBrand/brand-background.jpg");
+    background-size: 100%;
+    width: 100%;
+    overflow: hidden;
+    min-height: 550px;
+    color: white;
+    padding: 125px 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      z-index: -1;
+    }
+    @media (max-width: 992px) {
+      padding: 125px 0;
+    }
+    .title {
+      font-size: 35px !important;
+      padding-left: 25%;
+      padding-right: 25%;
+      font-family: var(--nexa-light);
+      color: #fff;
+      @media (max-width: 992px) {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 28px !important;
+      }
+    }
+    .description {
+      font-size: 17px;
+      padding: 0px 250px 0px 250px;
+      font-family: var(--nexa-light);
+      @media (max-width: 992px) {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px !important;
+      }
+    }
+  }
+}

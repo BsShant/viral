@@ -1,0 +1,100 @@
+.landing-page-container {
+  .landing-hero {
+    position: relative;
+    background-color: #fff;
+    .banner-slider {
+      width: 100%;
+      height: calc(100vh - var(--header-height));
+      border-bottom: 1px solid #c12030;
+      @media (max-width: 768px) {
+        .banner-left-side {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          align-items: center;
+          .welcome-text {
+            font-size: 2.5em;
+            text-align: center;
+          }
+          .banner-tag {
+            font-size: 0.8em;
+
+            text-align: center;
+          }
+          .landing-hero-button-container {
+            .btn-border-gradient {
+            }
+          }
+        }
+      }
+      .banner-left-side {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .welcome-text {
+          font-family: var(--nexa-bold);
+          font-size: 4.5em;
+          color: black;
+        }
+        .banner-tag {
+          font-family: var(--nexa-light);
+          font-size: 1.8em;
+          color: #c12030;
+          margin-bottom: 20px;
+        }
+        .landing-hero-button-container {
+          display: inline-block;
+          .btn-border-gradient {
+          }
+        }
+      }
+      .banner-right-side {
+        height: 100%;
+        @media (max-width: 768px) {
+          display: none;
+        }
+        .slider-wrap {
+          height: 100%;
+          display: flex;
+          align-items: flex-end;
+          .hero-slider {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            .item {
+              height: 100%;
+            }
+          }
+        }
+      }
+      .landing-hero-text-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        .landing-hero-heading {
+          font-family: var(--kanit);
+          text-transform: uppercase;
+          font-size: 52px;
+          line-height: 1.1;
+          margin-bottom: 30px;
+        }
+        .landing-hero-button {
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+      }
+    }
+  }
+}

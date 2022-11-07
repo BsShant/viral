@@ -1,0 +1,191 @@
+.how-it-works {
+  padding: 70px 0;
+  .title {
+    font-family: var(--nexa-light);
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  .influncer-brand {
+    font-family: var(--nexa-light);
+    font-size: 24px;
+  }
+  .nav-tabs {
+    border-bottom: 0px;
+  }
+  .tab-pane {
+    .active {
+      animation: slide-down 1s ease-out;
+    }
+  }
+
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h3 {
+    display: block;
+  }
+  h1 {
+    display: block;
+  }
+  .influncer-brand {
+    a {
+      line-height: inherit;
+      width: 200px;
+    }
+  }
+  .bottom-data {
+    display: flex;
+    justify-content: center;
+    a {
+      line-height: inherit;
+      width: 260px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.landing-how-tab-container {
+  .ant-tabs-top > .ant-tabs-nav::before {
+    border-bottom: none;
+  }
+
+  .ant-tabs-nav-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .ant-tabs-tab {
+    margin: 0 !important;
+    .landing-how-tab-title {
+      border-radius: 20px;
+      padding: 3px 3px 3px 3px;
+      color: black;
+      font-size: 21px;
+      background-color: transparent;
+      background-image: linear-gradient(white, white),
+        radial-gradient(circle at top left, #eb242d, #a1398b);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      border-color: transparent;
+      border-width: 0px;
+      text-decoration: none;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--nexa-light);
+      span {
+        padding: 3px 60px 3px 60px;
+        display: inline-block;
+        @media (max-width: 992px) {
+          padding: 3px 40px 3px 40px;
+        }
+        @media (max-width: 448px) {
+          padding: 3px 20px 3px 20px;
+        }
+      }
+    }
+    .border-radius-left-none {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+
+    .border-radius-right-none {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+  }
+  .ant-tabs-tab-active {
+    .landing-how-tab-title {
+      background: linear-gradient(to right, #eb242d 0%, #a1398b 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 3px 3px 3px 3px;
+      font-size: 21px;
+      border-width: 0px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--nexa-light);
+    }
+  }
+  .ant-tabs-content-holder {
+    #brand-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .step {
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+        height: 297px;
+        background: #f4f4f4;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        font-family: var(--nexa-light);
+        cursor: pointer;
+        flex-basis: 15%;
+        padding: 0 !important;
+        margin: 0;
+        margin-right: 30px;
+        flex-grow: 1;
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        @media (max-width: 992px) {
+          flex-basis: 25%;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          flex-grow: 1;
+          &[index="4"] {
+            flex-grow: 1;
+          }
+        }
+        @media (max-width: 768px) {
+          flex-basis: 35%;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          flex-grow: 1;
+          &[index="4"] {
+            flex-grow: 1;
+            flex-basis: 25%;
+          }
+          &[index="3"] {
+            flex-grow: 1;
+            flex-basis: 25%;
+          }
+          &[index="2"] {
+            flex-grow: 1;
+            flex-basis: 25%;
+          }
+        }
+        &:hover {
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+            0 15px 12px rgba(0, 0, 0, 0.22);
+          transform: scale(1.1, 1.1);
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+    .steps-footer {
+      padding: 0.8% 20% 0px 20%;
+      font-family: var(--nexa-light);
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+  display: none;
+}

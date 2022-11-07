@@ -1,0 +1,27 @@
+.landing-about-container {
+  min-height: 70vh;
+  padding: 70px 0;
+  background-color: black;
+  .landing-about-inner-container {
+    .landing-about-left {
+    }
+    .landing-menu-header {
+      font-family: var(--kanit);
+      color: white;
+      text-align: center;
+    }
+    .landing-about-sub-header {
+      font-family: var(--roboto);
+      color: #fff;
+      text-align: center;
+    }
+    .landing-about-detail{
+        font-family: var(--roboto);
+        color: #fff;
+        text-align: center;
+      }
+    }
+    .section-header-bottom {
+ 
+  }
+}
